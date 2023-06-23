@@ -1,0 +1,1656 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<CustSection xml:lang="en-US">
+
+  <MenuGroup Name="FIRELISP">
+    
+    <MacroGroup Name="Pozycjonowanie atrybutu">
+      <MenuMacro UID="góra">
+        <Macro>
+          <Name>Góra</Name>
+          <Command>(fl:attrib:location:setSS "UC")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="prawo">
+        <Macro>
+          <Name>Prawo</Name>
+          <Command>(fl:attrib:location:setSS "MR")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="dół">
+        <Macro>
+          <Name>Dół</Name>
+          <Command>(fl:attrib:location:setSS "DC")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="lewo_1">
+        <Macro>
+          <Name>Lewo</Name>
+          <Command>(fl:attrib:location:setSS "ML")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="lewo+wz">
+        <Macro>
+          <Name>Lewo + WZ</Name>
+          <Command>(fl:attrib:location:setSS "MLW")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="wpionie">
+        <Macro>
+          <Name>W pionie</Name>
+          <Command>(fl:element:pair:vertical:SS)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="wpoziomie">
+        <Macro>
+          <Name>W poziomie</Name>
+          <Command>(fl:element:pair:horizontal:SS)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="wpionie_1">
+        <Macro>
+          <Name>W pionie</Name>
+          <Command>(fl:element:align:vertical:ss)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="wpoziomie_1">
+        <Macro>
+          <Name>W poziomie</Name>
+          <Command>(fl:element:align:horizontal:ss)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="nowacentrala">
+        <Macro>
+          <Name>Nowa centrala</Name>
+          <Command>(fl:panel:new:dlg)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="nowapetla">
+        <Macro>
+          <Name>Nowa petla</Name>
+          <Command>(fl:loop:new:dlg)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="połącz">
+        <Macro>
+          <Name>Połącz</Name>
+          <Command>(fl:element:connect)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wczytaj">
+        <Macro>
+          <Name>Wczytaj</Name>
+          <Command>(LOAD "D:/Skrypty/Numerowanie v0.1/Numerowanie.lsp")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wczytaj_1">
+        <Macro>
+          <Name>Wczytaj</Name>
+          <Command>(LOAD "D:/Skrypty/Numerowanie v0.1/Numerowanie.lsp")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="setup">
+        <Macro>
+          <Name>Setup</Name>
+          <Command>(NumerowanieSetup)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="numerowanie">
+        <Macro>
+          <Name>Numerowanie</Name>
+          <Command>(Numerowanie2)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wczytaj_2">
+        <Macro>
+          <Name>Wczytaj</Name>
+          <Command/>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wczytaj_3">
+        <Macro>
+          <Name>Wczytaj</Name>
+          <Command>(LOAD "D:/Skrypty/Helper/Helper.lsp")</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="widocznoscatrybutow">
+        <Macro>
+          <Name>Widocznosc atrybutow</Name>
+          <Command>(fl:app:dlg_attribVisibility)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="edycjaatrybutuwlinipolecen">
+        <Macro>
+          <Name>Edycja atrybutu w lini polecen</Name>
+          <Command>(fl:app:edit_attribContent)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ustawienia">
+        <Macro>
+          <Name>Ustawienia</Name>
+          <Command>(fl:fire:dlg_options)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="podmianablokow">
+        <Macro>
+          <Name>Podmiana blokow</Name>
+          <Command>(fl:app:dlg_blockXChange)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="parametryczcionkiatrybutow">
+        <Macro>
+          <Name>Parametry czcionki atrybutow</Name>
+          <Command>(fl:app:dlg_attribFontSize)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="edycjapetli">
+        <Macro>
+          <Name>Edycja petli</Name>
+          <Command>(fl:loop:change:dlg)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="edycjacentrali">
+        <Macro>
+          <Name>Edycja centrali</Name>
+          <Command>(fl:panel:change:dlg)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="właściwości">
+        <Macro>
+          <Name>Właściwości</Name>
+          <Command>;$M=$(if,$(and,$(&gt;,$(getvar,OPMSTATE),0)),^c^c_propertiesclose,^c^c_properties)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wskaznikzadzialania">
+        <Macro>
+          <Name>Wskaznik zadzialania</Name>
+          <Command>(fl:element:insert "SSP" "WZ")</Command>
+          <HelpString/>
+          <Image ID="2dcontext"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="numerowanie_1">
+        <Macro>
+          <Name>Numerowanie</Name>
+          <Command>(fl:app:dlg_numberingSetup)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="FireLisp">
+      
+      <MenuMacro UID="uruchomfirelisp">
+        <Macro>
+          <Name>Uruchom FireLisp</Name>
+          <Command>(load "c:\\firelisp\\firelisp.lsp")</Command>
+          <HelpString/>
+          <SmallImage Name="C:\FireLisp\mnu\icons\logo (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\logo (32).png"/>
+        </Macro>
+      </MenuMacro><MenuMacro UID="about">
+        <Macro>
+          <Name>About</Name>
+          <Command>(fl:app:dlg_about)</Command>
+          <HelpString/>
+          
+          
+          
+          <Image ID="about"/></Macro>
+      </MenuMacro>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <MenuMacro UID="usun">
+        <Macro>
+          <Name>Usun</Name>
+          <Command>(pl:UsunSS)</Command>
+          <HelpString/>
+          <Image ID="deledata"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="utwórzsystempożarowy">
+        <Macro>
+          <Name>Nowy system pożarowy</Name>
+          <Command>(fl:fire:dlg_new)</Command>
+          <HelpString/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wstawcentrale">
+        <Macro>
+          <Name>Wstaw centrale</Name>
+          <Command>(pl:UtworzCentraleDLG)</Command>
+          <HelpString/>
+          <Image ID=""/>
+        </Macro>
+      </MenuMacro>
+      
+      <MenuMacro UID="połącz_1">
+        <Macro>
+          <Name>Połącz</Name>
+          <Command>(fl:element:connect)</Command>
+          <HelpString/>
+          <Image ID="C:\FireLisp\mnu\icons\polacz_czujki (16).png|C:\FireLisp\mnu\icons\polacz_czujki (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wz">
+        <Macro>
+          <Name>WZ</Name>
+          <Command>(fl:block:insert "SSP" "WZ" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="3dsnap_knot"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="wartościdomyślne">
+        <Macro>
+          <Name>Wartości domyślne</Name>
+          <Command>(fl:app:dlg_defaultOptions)</Command>
+          <HelpString/>
+          <Image ID="dc_show_hide"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    
+    
+    
+    <MacroGroup Name="SystemESSER">
+      <MenuMacro UID="czujkadymu">
+        <Macro>
+          <Name>Czujka dymu</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_O" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_opt (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_opt (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaciepła">
+        <Macro>
+          <Name>Czujka ciepła</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_TD" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          
+          
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_term (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_term (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepła">
+        <Macro>
+          <Name>Czujka dymu i ciepła</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_OT" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\czujka_mul (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="ręcznyostrzegaczpożarowy">
+        <Macro>
+          <Name>Ręczny ostrzegacz pożarowy</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_MCP" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\rop (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymudualnaiciepła">
+        <Macro>
+          <Name>Czujka dymu dualna i ciepła</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_O2T" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_o2t (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepłaradiowa">
+        <Macro>
+          <Name>Czujka dymu i ciepła radiowa</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_O2TW" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_o2tw (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułtal">
+        <Macro>
+          <Name>Moduł TAL</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_TAL" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_tal (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułfct">
+        <Macro>
+          <Name>Moduł FCT</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_FCT" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_fct (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł12r">
+        <Macro>
+          <Name>Moduł 12R</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_12R" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_12r (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="esser_moduł4g2r">
+        <Macro>
+          <Name>Moduł 4G2R</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_4G2R" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_4g2r (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="nadajnikczujekradiowych">
+        <Macro>
+          <Name>Nadajnik czujek radiowych</Name>
+          <Command>(fl:block:insert "ESSER" "ESSER_WIRELESS" nil CONF_SCALE_DEFAULT 0)</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\esser_wireless (16).png"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="SystemEST3">
+      <MenuMacro UID="czujkadymu_1">
+        <Macro>
+          <Name>Czujka dymu</Name>
+          <Command>(fl:element:insert "EST3" "EST3_PS")</Command>
+          <HelpString/>
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_opt (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_opt (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaciepła_1">
+        <Macro>
+          <Name>Czujka ciepła</Name>
+          <Command>(fl:element:insert "EST3" "EST3_H")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\czujka_term (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepła_1">
+        <Macro>
+          <Name>Czujka dymu i ciepła</Name>
+          <Command>(fl:element:insert "EST3" "EST3_PHS")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\czujka_mul (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="ręcznyostrzegaczpożarowy_1">
+        <Macro>
+          <Name>Ręczny ostrzegacz pożarowy</Name>
+          <Command>(fl:element:insert "EST3" "EST3_271")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\rop (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułcr">
+        <Macro>
+          <Name>Moduł CR</Name>
+          <Command>(fl:element:insert "EST3" "EST3_CR")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_cr (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułct1">
+        <Macro>
+          <Name>Moduł CT1</Name>
+          <Command>(fl:element:insert "EST3" "EST3_CT1")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_ct1 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułct2">
+        <Macro>
+          <Name>Moduł CT2</Name>
+          <Command>(fl:element:insert "EST3" "EST3_CT2")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_ct2 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="izolatorzwarć">
+        <Macro>
+          <Name>Izolator zwarć</Name>
+          <Command>(fl:element:insert "EST3" "EST3_IZ")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_iz (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułio">
+        <Macro>
+          <Name>Moduł IO</Name>
+          <Command>(fl:element:insert "EST3" "EST3_IO")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_io (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułcc1">
+        <Macro>
+          <Name>Moduł CC1</Name>
+          <Command>(fl:element:insert "EST3" "EST3_CC1")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_cc1 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułcc2">
+        <Macro>
+          <Name>Moduł CC2</Name>
+          <Command>(fl:element:insert "EST3" "EST3_CC2")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\est3_cc2 (16).png"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="SystemPOLON">
+      <MenuMacro UID="czujkadymu_2">
+        <Macro>
+          <Name>Czujka dymu</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_DOR")</Command>
+          <HelpString/>
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_opt (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_opt (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaciepła_2">
+        <Macro>
+          <Name>Czujka ciepła</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_TUN")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\czujka_term (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepła_2">
+        <Macro>
+          <Name>Czujka dymu i ciepła</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_DOT")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\czujka_mul (16).png"/></Macro>
+      </MenuMacro><MenuMacro UID="ręcznyostrzegaczpożarowy_2">
+        <Macro>
+          <Name>Ręczny ostrzegacz pożarowy</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_ROP")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\rop (16).png"/></Macro>
+      </MenuMacro>
+      
+      <MenuMacro UID="czujkadymuuniwersalna">
+        <Macro>
+          <Name>Czujka dymu uniwersalna</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_DUR")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_dur (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymujonizacyjna">
+        <Macro>
+          <Name>Czujka dymu jonizacyjna</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_DIO")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_dio (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="adapterczujekradiowych">
+        <Macro>
+          <Name>Adapter czujek radiowych</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_ACR")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_acr (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="eks">
+        <Macro>
+          <Name>EKS</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_EKS")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_eks (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ewk">
+        <Macro>
+          <Name>EWK</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_EWK")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_ewk (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ews">
+        <Macro>
+          <Name>EWS</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_EWS")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_ews (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="ucs">
+        <Macro>
+          <Name>UCS</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_UCS")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_ucs (16).png"/>
+        </Macro>
+      </MenuMacro>
+      
+      <MenuMacro UID="sygnalizator">
+        <Macro>
+          <Name>Sygnalizator</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_SAL")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_sal (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaradiowa">
+        <Macro>
+          <Name>Czujka radiowa</Name>
+          <Command>(fl:element:insert "POLON6000" "POLON6000_RADIO")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\polon_radio (16).png"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="SystemFP2000">
+      <MenuMacro UID="czujkadymu_3">
+        <Macro>
+          <Name>Czujka dymu</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_OPT")</Command>
+          <HelpString/>
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_opt (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_opt (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaciepła_3">
+        <Macro>
+          <Name>Czujka ciepła</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_TERM")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\czujka_term (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepła_3">
+        <Macro>
+          <Name>Czujka dymu i ciepła</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_MUL")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\czujka_mul (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="ręcznyostrzegaczpożarowy_3">
+        <Macro>
+          <Name>Ręczny ostrzegacz pożarowy</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_ROP")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\rop (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł40">
+        <Macro>
+          <Name>Moduł 4/0</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_IO2014C")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_io2014c (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł21">
+        <Macro>
+          <Name>Moduł 2/1</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_IO2031C")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_io2031c (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł22">
+        <Macro>
+          <Name>Moduł 2/2</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_IO2032C")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_io2032c (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł44">
+        <Macro>
+          <Name>Moduł 4/4</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_IO2034C")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_io2034c (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułsygnalizatorów">
+        <Macro>
+          <Name>Moduł sygnalizatorów</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_ICC")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_icc (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułliniibocznej">
+        <Macro>
+          <Name>Moduł linii bocznej</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_IU2055C")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_ui2055c (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="sygnalizatorakustycznypętlowy">
+        <Macro>
+          <Name>Sygnalizator akustyczny pętlowy</Name>
+          <Command>(pl:WstawElement "FP2000" "FP2000_AS2363")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\fp2000_as2363 (16).png"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="SystemAWEX">
+      <MenuMacro UID="czujkadymu_4">
+        <Macro>
+          <Name>Czujka dymu</Name>
+          <Command>(pl:WstawElement "AWEX" "AWEX_OPT")</Command>
+          <HelpString/>
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_opt (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_opt (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaciepła_4">
+        <Macro>
+          <Name>Czujka ciepła</Name>
+          <Command>(pl:WstawElement "AWEX" "AWEX_TERM")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\czujka_term (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepła_4">
+        <Macro>
+          <Name>Czujka dymu i ciepła</Name>
+          <Command>(pl:WstawElement "AWEX" "AWEX_MUL")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\czujka_mul (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="ręcznyostrzegaczpożarowy_4">
+        <Macro>
+          <Name>Ręczny ostrzegacz pożarowy</Name>
+          <Command>(pl:WstawElement "AWEX" "AWEX_ROP")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\rop (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł022">
+        <Macro>
+          <Name>Moduł 022</Name>
+          <Command>(pl:WstawElement "AWEX" "AWEX_022")</Command>
+          <HelpString/>
+          
+          <Image ID="C:\FireLisp\mnu\icons\awex_022 (16).png"/></Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="SystemBOSCH">
+      <MenuMacro UID="czujkadymu_5">
+        <Macro>
+          <Name>Czujka dymu</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_DO")</Command>
+          <HelpString/>
+          
+          <SmallImage Name="C:\FireLisp\mnu\icons\czujka_opt (16).png"/>
+          <LargeImage Name="C:\FireLisp\mnu\icons\czujka_opt (32).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkaciepła_5">
+        <Macro>
+          <Name>Czujka ciepła</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_DT")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\czujka_term (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="czujkadymuiciepła_5">
+        <Macro>
+          <Name>Czujka dymu i ciepła</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_DOT")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\czujka_mul (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="ręcznyostrzegaczpożarowy_5">
+        <Macro>
+          <Name>Ręczny ostrzegacz pożarowy</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_DM")</Command>
+          <HelpString/>
+          
+          <Image ID="c:\firelisp\mnu\icons\rop (16).png"/></Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułi8r1">
+        <Macro>
+          <Name>Moduł I8R1</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_I8R1")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_i8r1 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="moduł4-con-s">
+        <Macro>
+          <Name>Moduł 4-CON-S</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_CON")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_con (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułi2">
+        <Macro>
+          <Name>Moduł I2</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_I2")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_i2 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułnac">
+        <Macro>
+          <Name>Moduł NAC</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_NAC")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_nac (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułrhv">
+        <Macro>
+          <Name>Moduł RHV</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_RHV")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_rhv (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułrlv1">
+        <Macro>
+          <Name>Moduł RLV1</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_RLV1")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_rlv1 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="modułrlv8">
+        <Macro>
+          <Name>Moduł RLV8</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_RLV8")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_rlv8 (16).png"/>
+        </Macro>
+      </MenuMacro>
+      <MenuMacro UID="sygnalizatorgłosowypętlowy">
+        <Macro>
+          <Name>Sygnalizator głosowy pętlowy</Name>
+          <Command>(pl:WstawElement "BOSCH" "BOSCH_AF")</Command>
+          <HelpString/>
+          <Image ID="c:\firelisp\mnu\icons\bosch_af (16).png"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MenuRoot>
+      <PopMenuRoot>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <PopMenu UID="cmEdytuj">
+          <Name>Edytuj</Name>
+          <Alias>CMEDIT</Alias>
+          
+          
+          
+          <PopMenuRef pUID="mnAtrybut"/>
+          <PopMenuRef pUID="mnElement"/>
+          <PopMenuItem>
+            <NameRef>Usun</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="usun"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Połącz</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="połącz"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        
+        
+        <PopMenu UID="mnAtrybut">
+          <Name>&amp;Atrybut</Name>
+          <PopMenuRef pUID="mnPozycja"/>
+        </PopMenu>
+        <PopMenu UID="mnPozycja">
+          <Name>&amp;Pozycja</Name>
+          
+          <PopMenuItem>
+            <NameRef>&amp;Góra</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="góra"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Prawo</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="prawo"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Dół</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="dół"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Lewo</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="lewo_1"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Lewo + WZ</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="lewo+wz"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu UID="mnElement">
+          <Name>&amp;Element</Name>
+          <PopMenuRef pUID="mnParuj"/>
+          <PopMenuRef pUID="mnWyrownaj"/></PopMenu>
+        <PopMenu UID="mnParuj">
+          <Name>&amp;Paruj</Name>
+          <PopMenuItem>
+            <NameRef>&amp;W pionie</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="wpionie"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;W poziomie</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="wpoziomie"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu UID="mnWyrownaj">
+          <Name>&amp;Wyrownaj</Name>
+          <PopMenuItem>
+            <NameRef>&amp;W pionie</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="wpionie_1"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;W poziomie</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="wpoziomie_1"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu UID="mnPOLON4000">
+          <Name>&amp;POLON4000</Name>
+          <PopMenuItem>
+            <NameRef>Czujka dymu</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_2"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Czujka ciepła</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_2"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Czujka dymu i ciepła</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła_2"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Ręczny ostrzegacz pożarowy</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy_2"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Czujka dymu uniwersalna</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuuniwersalna"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Czujka dymu jonizacyjna</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymujonizacyjna"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Adapter czujek radiowych</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="adapterczujekradiowych"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>EKS</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="eks"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>EWK</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ewk"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>EWS</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ews"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>UCS</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ucs"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Sygnalizator</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="sygnalizator"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>Czujka radiowa</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaradiowa"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        
+        <PopMenu UID="mnFire">
+          <Alias>FIRE</Alias>
+          <Name>&amp;Fire Lisp</Name>
+          <PopMenuItem>
+            <NameRef>Uruchom FireLisp</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="uruchomfirelisp"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true"/>
+          <PopMenuRef pUID="mnSystempozarowy"/>
+          <PopMenuItem IsSeparator="true"/>
+          <PopMenuItem>
+            <NameRef>&amp;Widocznosc atrybutow</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="widocznoscatrybutow"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Wartości domyślne</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="wartościdomyślne"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Parametry czcionki atrybutow</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="parametryczcionkiatrybutow"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Edycja atrybutu w lini polecen</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="edycjaatrybutuwlinipolecen"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true"/>
+          <PopMenuItem>
+            <NameRef>&amp;Podmiana blokow</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="podmianablokow"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true"/>
+          <PopMenuItem>
+            <NameRef>About</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="about"/>
+            </MenuItem>
+          </PopMenuItem>
+          
+          
+          <PopMenuRef pUID="mnHelper"/>
+          <PopMenuItem IsSeparator="true"/>
+          <PopMenuItem>
+            <NameRef>&amp;Właściwości</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="właściwości"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Numerowanie</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="numerowanie_1"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu UID="cmblok">
+          <Name>blok</Name>
+          <Alias>OBJECT_INSERT</Alias>
+          <PopMenuItem>
+            <NameRef>&amp;About</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="about"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem IsSeparator="true"/></PopMenu>
+        
+        
+        
+        <PopMenu UID="mnHelper">
+          <Name>&amp;Helper</Name>
+          <PopMenuItem>
+            <NameRef>&amp;Wczytaj</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="wczytaj_3"/>
+            </MenuItem>
+          </PopMenuItem>
+        </PopMenu>
+        <PopMenu UID="mnSystempozarowy">
+          <Name>&amp;System pozarowy</Name>
+          <PopMenuItem>
+            <NameRef>Nowy system pożarowy</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="utwórzsystempożarowy"/>
+            </MenuItem>
+          </PopMenuItem><PopMenuItem>
+            <NameRef>&amp;Nowa centrala</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="nowacentrala"/>
+            </MenuItem>
+          </PopMenuItem><PopMenuItem>
+            <NameRef>&amp;Edycja centrali</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="edycjacentrali"/>
+            </MenuItem>
+          </PopMenuItem>
+          <PopMenuItem>
+            <NameRef>&amp;Nowa petla</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="nowapetla"/>
+            </MenuItem>
+          </PopMenuItem><PopMenuItem>
+            <NameRef>&amp;Edycja petli</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="edycjapetli"/>
+            </MenuItem>
+          </PopMenuItem><PopMenuItem>
+            <NameRef>&amp;Ustawienia</NameRef>
+            <MenuItem>
+              <MacroRef MenuMacroID="ustawienia"/>
+            </MenuItem>
+          </PopMenuItem>
+          
+        </PopMenu>
+      </PopMenuRoot>
+      <RibbonRoot>
+        <RibbonTabSourceCollection/>
+        <RibbonPanelSourceCollection/>
+        <RibbonTabSelectors/></RibbonRoot>
+      <MouseButtonRoot>
+        <ButtonGroup>
+          <Alias>AUX1</Alias>
+          <ButtonGroup>
+            <Alias>AUX2</Alias>
+            <ButtonGroup>
+              <Alias>AUX3</Alias>
+              <ButtonGroup>
+                <Alias>AUX4</Alias>
+              </ButtonGroup>
+              
+            </ButtonGroup>
+            
+          </ButtonGroup>
+        </ButtonGroup>
+      </MouseButtonRoot>
+      <DoubleClickRoot>
+        
+        <DoubleClickAction DxfName="INSERT">
+          <Name>,kkkk</Name>
+          <MenuItem>
+            <MacroRef MenuMacroID="uruchomfirelisp"/>
+          </MenuItem>
+        </DoubleClickAction>
+      </DoubleClickRoot>
+      <DigitizerButtonRoot/>
+      <TabletMenuRoot/>
+      <ToolbarRoot>
+        
+        
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbESSER" rows="1">
+          <Alias>TB_ESSER</Alias>
+          <Name>ESSER</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ręczny ostrzegacz pożarowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Czujka dymu dualna i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymudualnaiciepła"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła radiowa</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepłaradiowa"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł TAL</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułtal"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł FCT</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułfct"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł 12R</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł12r"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł 4G2R</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł4g2r"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Nadajnik czujek radiowych</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="nadajnikczujekradiowych"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>WZ</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="wz"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbEST3" rows="1">
+          <Alias>TB_EST3</Alias>
+          <Name>EST3</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_1"/>
+            </MenuItem>
+            <State></State></ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła_1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ręczny ostrzegacz pożarowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy_1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Moduł CR</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułcr"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł CT1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułct1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł CT2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułct2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Izolator zwarć</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="izolatorzwarć"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł IO</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułio"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł CC1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułcc1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł CC2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułcc2"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbPOLON" rows="1">
+          <Alias>TB_POLON</Alias>
+          <Name>POLON6000</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła_2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ręczny ostrzegacz pożarowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy_2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Czujka dymu uniwersalna</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuuniwersalna"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu jonizacyjna</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymujonizacyjna"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka radiowa</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaradiowa"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Adapter czujek radiowych</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="adapterczujekradiowych"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>EKS</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="eks"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>EWK</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ewk"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>EWS</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ews"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>UCS</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ucs"/>
+            </MenuItem>
+          </ToolbarButton><ToolbarButton>
+            <Name>Sygnalizator</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="sygnalizator"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Wskaznik zadzialania</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="wskaznikzadzialania"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbFP2000" rows="1">
+          <Alias>TB_FP2000</Alias>
+          <Name>FP2000</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_3"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_3"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła_3"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ręczny ostrzegacz pożarowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy_3"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Moduł 4/0</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł40"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł 2/1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł21"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł 2/2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł22"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł 4/4</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł44"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł sygnalizatorów</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułsygnalizatorów"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł linii bocznej</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułliniibocznej"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sygnalizator akustyczny pętlowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="sygnalizatorakustycznypętlowy"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbAWEX" rows="1">
+          <Alias>TB_AWEX</Alias>
+          <Name>AWEX</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_4"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_4"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła_4"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ręczny ostrzegacz pożarowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy_4"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Moduł 022</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł022"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbBOSCH" rows="1">
+          <Alias>TB_BOSCH</Alias>
+          <Name>BOSCH</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_5"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_5"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu i ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuiciepła_5"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Ręczny ostrzegacz pożarowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="ręcznyostrzegaczpożarowy_5"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Moduł I8R1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułi8r1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł 4-CON-S</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="moduł4-con-s"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł I2</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułi2"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł NAC</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułnac"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł RHV</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułrhv"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł RLV1</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułrlv1"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł RLV8</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułrlv8"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Sygnalizator głosowy pętlowy</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="sygnalizatorgłosowypętlowy"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbtest" rows="1">
+          <Alias>TB_test</Alias>
+          <Name>test</Name>
+          <ToolbarButton>
+            <Name>Czujka dymu</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymu_5"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Moduł RHV</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="modułrhv"/>
+            </MenuItem>
+          </ToolbarButton><ToolbarButton>
+            <Name>Czujka ciepła</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkaciepła_5"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>Czujka dymu uniwersalna</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymuuniwersalna"/>
+            </MenuItem>
+          </ToolbarButton>
+          <ToolbarButton>
+            <Name>EKS</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="eks"/>
+            </MenuItem>
+          </ToolbarButton>
+          
+          
+          <ToolbarButton>
+            <Name>Czujka dymu jonizacyjna</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="czujkadymujonizacyjna"/>
+            </MenuItem>
+          </ToolbarButton><ToolbarButton IsSeparator="true"/>
+          <ToolbarButton>
+            <Name>Połącz</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="połącz_1"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+        <Toolbar ToolbarOrient="floating" ToolbarVisible="hide" UID="tbSchematy" rows="1">
+          <Alias>TB_Schematy</Alias>
+          <Name>Schematy</Name>
+          <ToolbarButton>
+            <Name>Połącz</Name>
+            <MenuItem>
+              <MacroRef MenuMacroID="połącz_1"/>
+            </MenuItem>
+          </ToolbarButton>
+        </Toolbar>
+      </ToolbarRoot>
+      <QuadRoot>
+        <QuadTabs/>
+      </QuadRoot>
+    </MenuRoot>
+  </MenuGroup>
+
+
+
+
+
+
+
+
+</CustSection>

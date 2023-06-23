@@ -1,0 +1,94 @@
+; ========================================================================================================
+; | Functions                                                                                            |
+; ========================================================================================================
+
+(defun fl.layerOff (layerName) 
+  (command "_layer" "_off" layerName "")
+)
+
+; --------------------------------------------------------------------------------------------------------
+
+(defun fl.layerOn (layerName) 
+  (command "_layer" "_on" layerName "")
+)
+
+; --------------------------------------------------------------------------------------------------------
+
+(defun fl.layerNew (layerName) 
+  (command "_layer" "_new" layerName "")
+)
+
+; --------------------------------------------------------------------------------------------------------
+
+(defun fl.layerSetActive (layerName) 
+  (command "_layer" "s" layerName "")
+)
+
+; --------------------------------------------------------------------------------------------------------
+
+(defun fl.layerRename (layerName layerNameNew / obj state) 
+  (if (setq obj (tblobjname "Layer" layerName)) 
+    (progn 
+      (entmod 
+        (subst 
+          (cons 2 layerNameNew)
+          (assoc 2 (entget obj))
+          (entget obj)
+        )
+      )
+      (print 
+        (strcat " *** INFO *** Nazwa warstwy zostala zmieniona na: '" layerNameNew "'.")
+      )
+    )
+    (print (strcat " ### ERROR ### Nie znaleziono warstwy o nazwie '" layerName "'."))
+  )
+  (princ)
+)
+
+; --------------------------------------------------------------------------------------------------------
+
+(defun fl.layerSetColor (layerName color / obj) 
+  (if (setq obj (tblobjname "Layer" layerName)) 
+    (progn 
+      (entmod 
+        (subst 
+          (cons 62 color)
+          (assoc 62 (entget obj))
+          (entget obj)
+        )
+      )
+      (print 
+        (strcat " *** INFO *** Kolor warstwy '"
+                layerName
+                "' zostal zmieniony na kolor o numerze: '" 
+                (itoa color)
+                "'."
+        )
+      )
+    )
+    (print (strcat " ### ERROR ### Nie znaleziono warstwy o nazwie '" layerName "'."))
+  )
+  (princ)
+)
+
+; --------------------------------------------------------------------------------------------------------
+
+(defun fl:layer:getByName (layerName) 
+  (setq ssBlocks (ssget "_X" '((0 . "LAYER"))))
+  (setq i 0)
+
+  (repeat (sslength ssBlocks) 
+    (progn 
+      (setq entityName (ssname ssBlocks i))
+      (print entityName)
+      ;      (setq blockFID (fl:attrib:content:get entityName "FID"))
+      ;      (if (= blockFID fid)
+      ;        (progn
+      ;          (setq returnValue entityName)
+      ;        )
+      ;      )
+      (setq i (+ i 1))
+    )
+  )
+  returnValue
+)
