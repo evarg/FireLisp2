@@ -200,6 +200,13 @@
           <HelpString/>
         </Macro>
       </MenuMacro>
+      <MenuMacro UID="wczyajfirelisp">
+        <Macro>
+          <Name>Wczyaj FireLISP</Name>
+          <Command>(load "c:\\firelisp\\firelisp.lsp")</Command>
+          <HelpString/>
+          <Image ID="(FLP)"/></Macro>
+      </MenuMacro>
     </MacroGroup>
     <MacroGroup Name="FireLisp">
 
@@ -270,6 +277,14 @@
           <HelpString/>
           <Image ID="dc_show_hide"/>
         </Macro>
+      </MenuMacro>
+      <MenuMacro UID="uruchomfirelisp_1">
+        <Macro>
+          <Name>Uruchom FireLisp</Name>
+          <Command>(load "c:\\firelisp2\\firelisp.lsp")</Command>
+          <HelpString/>
+          
+          <Image ID="C:\firelisp\mnu\icons\logo (32).png"/></Macro>
       </MenuMacro>
     </MacroGroup>
     <MacroGroup Name="SystemESSER">
@@ -798,6 +813,96 @@
         </Macro>
       </MenuMacro>
     </MacroGroup>
+    <MacroGroup Name="Centruj jednostki">
+      <MenuMacro UID="centermark">
+        <Macro>
+          <Name>Znacznik Środka</Name>
+          <Command>^c^c_centermark</Command>
+          <HelpString>Tworzy nowy znacznik środka</HelpString>
+          <Image ID="centermark"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Edycja Brył 3D">
+      <MenuMacro UID="acis_face_delete">
+        <Macro>
+          <Name>Usuń Ścianę</Name>
+          <Command>^c^c_solidedit;_face;_delete</Command>
+          <HelpString>Czyści lub usuwa powierzchnie, łącznie z zaokrągleniami oraz fazowaniem obiektów bryłowych</HelpString>
+          <Image ID="acis_face_delete"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Rysuj">
+      <MenuMacro UID="spline">
+        <Macro>
+          <Name>Splajn</Name>
+          <Command>^c^c_spline</Command>
+          <HelpString>Tworzy nowy splajn lub modyfikuje istniejącą polilinię</HelpString>
+          <Image ID="spline"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Złożenie">
+      <MenuMacro UID="mcad_comp_new">
+        <Macro>
+          <Name>Nowy Komponent</Name>
+          <Command>^c^c_bmNew;;</Command>
+          <HelpString>Tworzy nowy komponent</HelpString>
+          <Image ID="mcad_comp_new"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Atrybuty">
+      <MenuMacro UID="attdef">
+        <Macro>
+          <Name>Definiowanie Atrybutów...</Name>
+          <Command>^c^c_attdef</Command>
+          <HelpString>Definiuje sposób tworzenia atrybutów bloku</HelpString>
+          <Image ID="attdef"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Wiązania 2D">
+      <MenuMacro UID="gc_concentric">
+        <Macro>
+          <Name>Koncentryczny</Name>
+          <Command>^c^c_gcconcentric</Command>
+          <HelpString/>
+          <Image ID="gc_concentric"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Blok Parametryczny 2D">
+      <MenuMacro UID="pb_parametricblock">
+        <Macro>
+          <Name>Blok Parametryczny</Name>
+          <Command/>
+          <HelpString/>
+          <Image ID="pb_create"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Bryły 3D">
+      <MenuMacro UID="acis_cylinder">
+        <Macro>
+          <Name>Walec</Name>
+          <Command>^c^c_cylinder</Command>
+          <HelpString>Rysuje walec</HelpString>
+          <Image ID="acis_cylinder"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
+    <MacroGroup Name="Adnotacje">
+      <MenuMacro UID="defaultscalelist">
+        <Macro>
+          <Name>Domyślna Lista Skal</Name>
+          <Command>^c^c_defaultscalelist</Command>
+          <HelpString>Steruje domyślną listą skal. Gdy lista jest resetowana, domyślnie przywracane są skale zdefiniowane w tej lokalizacji.</HelpString>
+          <Image ID="defaultscalelist"/>
+        </Macro>
+      </MenuMacro>
+    </MacroGroup>
     <MenuRoot>
       <PopMenuRoot>
         <PopMenu UID="cmEdytuj">
@@ -1097,8 +1202,35 @@
         </PopMenu>
       </PopMenuRoot>
       <RibbonRoot>
-        <RibbonTabSourceCollection/>
-        <RibbonPanelSourceCollection/>
+        <RibbonTabSourceCollection>
+          <RibbonTabSource Text="Pierwsza karta" UID="WST_1">
+            <Name>Karta wstążki 1</Name>
+            <RibbonPanelSourceReference PanelId="PNL_1" ResizeStyle="NoCollapse"/></RibbonTabSource>
+        </RibbonTabSourceCollection>
+        <RibbonPanelSourceCollection>
+          <RibbonPanelSource Text="Pierwszy panel wstążki" UID="PNL_1">
+            <Name>PAnel 1</Name>
+            
+            
+            
+            
+            
+            
+            <RibbonRow>
+              <RibbonToggleButton ButtonStyle="LargeWithText" MenuMacroID="uruchomfirelisp_1" Text="Uruchom FireLisp">
+                <State/>
+              </RibbonToggleButton><RibbonSeparator SeparatorStyle="Spacer"/>
+              <RibbonCommandButton ButtonStyle="LargeWithText" MenuMacroID="attdef" Text="Definiowanie Atrybutów..."/>
+              <RibbonCommandButton ButtonStyle="LargeWithHorizontalText" MenuMacroID="gc_concentric" Text="Koncentryczny"/>
+              <RibbonSplitButton ButtonStyle="LargeWithoutText">
+                <RibbonCommandButton MenuMacroID="pb_parametricblock" Text="Blok Parametryczny"/>
+                <RibbonCommandButton MenuMacroID="acis_cylinder" Text="Walec"/>
+                <RibbonCommandButton MenuMacroID="defaultscalelist" Text="Domyślna Lista Skal"/>
+              </RibbonSplitButton>
+              
+            </RibbonRow>
+          </RibbonPanelSource>
+        </RibbonPanelSourceCollection>
         <RibbonTabSelectors/>
       </RibbonRoot>
       <MouseButtonRoot>
@@ -1609,10 +1741,36 @@
         </Toolbar>
       </ToolbarRoot>
       <QuadRoot>
-        <QuadTabs/>
+        <QuadTabs>
+          <QuadTab ID="qtKład" Name="ZKł kład" NameRef="Kład">
+            <QuadButton ID="spline" QuadAnalyzerId="CUI.FireLisp_2"/>
+            <QuadButton ID="mcad_comp_new" QuadAnalyzerId="CUI.FireLisp_2"/>
+          </QuadTab>
+        </QuadTabs>
+        <QuadButtons>
+          <QuadButton MenuMacroID="spline">
+            <Filter Alias="NO_SELECTION"/>
+          </QuadButton>
+          <QuadButton MenuMacroID="mcad_comp_new">
+            
+            <Filter Alias="NO_SELECTION"/>
+            <Filter Alias="OBJECTS_ANY"/>
+            <Filter Alias="OBJECT_INSERT"/>
+          </QuadButton>
+        </QuadButtons>
       </QuadRoot>
     </MenuRoot>
   </MenuGroup>
+
+
+
+
+
+
+
+
+
+
 
 
 </CustSection>
